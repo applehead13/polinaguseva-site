@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Полина Гусева — дизайнер и разработчик сайтов под ключ (Figma, Tilda)</title>
+  <meta name="description" content="Полина Гусева — дизайнер интерфейсов из Санкт-Петербурга. Лендинги, интернет-магазины, многостраничные сайты, презентации. Дизайн в Figma и вёрстка на Tilda под ключ.">
+  <meta name="theme-color" content="#afc8e1">
+  <meta property="og:title" content="Полина Гусева — дизайнер интерфейсов">
+  <meta property="og:description" content="Удобные и понятные дизайны интерфейсов. Лендинги, интернет-магазины, многостраничные сайты.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preload" href="fonts/Moniqa-BlackHeading.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">К содержимому</a>
+
+<!-- Плавающая шапка (появляется после первого экрана) -->
+<header class="bar" id="bar" aria-hidden="true">
+  <span class="bar__where" id="barWhere">Главная</span>
+  <a class="bar__logo" href="#top" tabindex="-1">Полина Гусева <img src="images/logo-mark.png" alt="" width="18" height="18"></a>
+  <span class="bar__right">
+    <button class="bar__menu" type="button" data-menu-open tabindex="-1">[меню]</button>
+    <span class="bar__num" id="barNum">[01]</span>
+  </span>
+</header>
+
+<!-- Меню -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+  <button class="menu__close" type="button" data-menu-close aria-label="Закрыть меню">[закрыть]</button>
+  <nav class="menu__nav">
+    <a href="#top" data-menu-close><i>01</i>Главная</a>
+    <a href="#portfolio" data-menu-close><i>02</i>Портфолио</a>
+    <a href="#process" data-menu-close><i>03</i>Этапы работы</a>
+    <a href="#services" data-menu-close><i>04</i>Услуги</a>
+    <a href="#faq" data-menu-close><i>05</i>Вопросы</a>
+    <a href="#about" data-menu-close><i>06</i>Обо мне</a>
+    <a href="#contacts" data-menu-close><i>07</i>Контакты</a>
+  </nav>
+  <p class="menu__tg">tg: <a href="https://t.me/ppolinaguseva" target="_blank" rel="noopener">@ppolinaguseva</a></p>
+</div>
+
+<main id="main">
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="top" data-section="Главная" data-num="01">
+  <nav class="hero__nav" aria-label="Основная навигация">
+    <ul>
+      <li><a href="#top">Главная</a></li>
+      <li><a href="#portfolio">Портфолио</a></li>
+      <li><a href="#process">Этапы работы</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#faq">Вопросы</a></li>
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+    <span class="hero__status"><i></i>Доступна для новых проектов</span>
+    <button class="hero__burger" type="button" data-menu-open>[меню]</button>
+  </nav>
+
+  <div class="hero__panel">
+    <figure class="polaroid hero__polaroid">
+      <img class="polaroid__clip" src="images/clip.webp" alt="" width="104" height="91">
+      <img class="polaroid__photo" src="images/me-hero.webp" alt="Полина с собакой" width="218" height="280">
+      <span class="polaroid__note"><span class="script">Это я</span><img src="images/arrow.svg" alt="" width="26" height="26"></span>
+      <figcaption class="script script--dark">tg: @ppolinaguseva</figcaption>
+    </figure>
+
+    <div class="hero__copy">
+      <h1 class="h-display">Удобные и понятные дизайны интерфейсов</h1>
+      <p>Без дизайна ради дизайна, без навязывания сложных решений. Не усложняю там, где можно проще (но уместный креатив никто не отменял)</p>
+      <div class="hero__btns">
+        <a class="btn btn--dark" href="#contacts">Обсудить проект</a>
+        <a class="btn btn--ghost" href="#portfolio">Портфолио</a>
+      </div>
+    </div>
+
+    <div class="hero__name" aria-hidden="true">Полина Гусева</div>
+    <span class="script hero__role">Дизайнер интерфейсов</span>
+  </div>
+
+  <div class="hero__foot">
+    <span>Дизайнер интерфейсов</span>
+    <span class="hero__foot-mid">лендинги/интернет-магазины/многостраничные сайты/портфолио/презентации</span>
+    <span>Санкт-Петербург</span>
+  </div>
+</section>
+
+<!-- ========== ПОРТФОЛИО ========== -->
+<section class="portfolio" id="portfolio" data-section="Портфолио" data-num="02">
+  <div class="wrap">
+    <span class="label">Портфолио</span>
+    <p class="portfolio__lead">Все проекты в портфолио — учебные, но это не пет-проекты «для себя». Каждый создавался под живую задачу конкретного человека или бизнеса: реальные сроки, реальные правки и обратная связь. Я сознательно училась на практике, решая проблемы заказчиков, а не выдумывая идеальные условия.</p>
+
+    <div class="projects">
+      <!-- 1 -->
+      <article class="project project--blue">
+        <div class="project__info">
+          <span class="project__tags">дизайн/типографика/тексты</span>
+          <h2 class="h-xl">Клуб экранизаций</h2>
+          <div class="screen"><img src="images/club-preview.webp" alt="Превью лендинга «Клуб экранизаций»" loading="lazy"></div>
+          <p>Концепт лендинга для книжного клуба, который читает книгу, смотрит её экранизацию и спорит, что вышло лучше.</p>
+          <div class="project__meta"><span>Проект[1]</span><span>Лендинг/2026</span></div>
+        </div>
+        <div class="project__photo"><img src="images/club-photo.webp" alt="" loading="lazy"></div>
+      </article>
+
+      <!-- 2 -->
+      <article class="project project--brown project--flip">
+        <div class="project__info">
+          <span class="project__tags">дизайн/типографика/тексты</span>
+          <h2 class="h-xl">Юлия Попова</h2>
+          <div class="screen"><img src="images/yulia-preview.webp" alt="Превью лендинга врача-ортодонта Юлии Поповой" loading="lazy"></div>
+          <p>Одностраничный лендинг врача-ортодонта из Санкт-Петербурга.</p>
+          <div class="project__meta"><span>Проект[2]</span><span>Лендинг/2025-2026</span></div>
+        </div>
+        <div class="project__photo"><img src="images/yulia-photo.webp" alt="" loading="lazy"></div>
+      </article>
+
+      <!-- 3 -->
+      <article class="project project--blue">
+        <div class="project__info">
+          <span class="project__tags">дизайн/типографика/тексты</span>
+          <h2 class="h-xl">Housing Market Trends</h2>
+          <div class="screen"><img src="images/housing-preview.webp" alt="Превью дашборда Housing Market Trends" loading="lazy"></div>
+          <p>Дашборд по текущему состоянию рынка недвижимости Санкт-Петербурга и ключевым тенденциям его изменений</p>
+          <div class="project__meta"><span>Проект[3]</span><span>Дашборд/2025</span></div>
+        </div>
+        <div class="project__photo"><img src="images/housing-photo.webp" alt="" loading="lazy"></div>
+      </article>
+
+      <!-- 4 -->
+      <article class="project project--brown project--flip">
+        <div class="project__info">
+          <span class="project__tags">дизайн/типографика/тексты</span>
+          <h2 class="h-xl">Главтехпроект</h2>
+          <div class="screen"><img src="images/glavtech-preview.webp" alt="Превью лендинга «Главтехпроект»" loading="lazy"></div>
+          <p>Одностраничный лендинг для проектной компании, занимающейся медициной</p>
+          <div class="project__meta"><span>Проект[4]</span><span>Лендинг/2025</span></div>
+        </div>
+        <div class="project__photo project__photo--top"><img src="images/glavtech-photo.webp" alt="" loading="lazy"></div>
+      </article>
+
+      <!-- 5 -->
+      <article class="project project--blue">
+        <div class="project__info">
+          <span class="project__tags">дизайн/типографика/тексты</span>
+          <h2 class="h-xl">Dead•T•Shirt</h2>
+          <div class="screen"><img src="images/dts-preview.webp" alt="Превью интернет-магазина Dead•T•Shirt" loading="lazy"></div>
+          <p>Интернет-магазин уникального рок-мерча в Сочи с доставкой по всему миру</p>
+          <div class="project__meta"><span>Проект[5]</span><span>Интернет-магазин/2026</span></div>
+        </div>
+        <div class="project__photo"><img src="images/dts-photo.webp" alt="" loading="lazy"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ЭТАПЫ ========== -->
+<section class="process" id="process" data-section="Этапы работы" data-num="03">
+  <div class="wrap">
+    <h2 class="h-giant">Процесс работы</h2>
+    <div class="process__grid">
+      <div class="process__side">
+        <ul class="bullets">
+          <li>Вы на каждом шагу видите прогресс и утверждаете работу,</li>
+          <li>каждый этап имеет чёткий дедлайн, я ценю Ваше время,</li>
+          <li>мы общаемся через Telegram — всё прозрачно и в одном месте, Вы всегда в курсе прогресса</li>
+        </ul>
+        <a class="btn btn--blue" href="#contacts">Обсудить проект</a>
+        <hr class="rule">
+      </div>
+
+      <ol class="steps">
+        <li class="step step--blue">
+          <h3 class="h-lg">Точка "А"</h3>
+          <i class="step__sq" aria-hidden="true"></i>
+          <ul class="slashes">
+            <li>Знакомство и бриф</li><li>Видеоконференция</li><li>Предварительное ТЗ и оценка объема работ</li>
+            <li>Коммерческое предложение</li><li>Оформление договора</li><li>Предоплата и старт</li>
+          </ul>
+          <span class="step__mark"><img src="images/icon-start.png" alt="" width="48" height="48"><span class="script">старт</span></span>
+        </li>
+        <li class="step step--brown">
+          <h3 class="h-lg">Стратегия и аналитика</h3>
+          <i class="step__sq" aria-hidden="true"></i>
+          <ul class="slashes">
+            <li>Анализ ниши и конкурентов</li><li>Портрет целевой аудитории (ЦА)</li><li>Анализ трендов</li>
+            <li>Карта сайта и логика разделов</li><li>Написание и структурирование текстов</li><li>Интерактивный прототип</li>
+          </ul>
+          <img class="step__icon" src="images/icon-strategy.png" alt="" width="56" height="56">
+        </li>
+        <li class="step step--brown">
+          <h3 class="h-lg">Дизайн-концепция</h3>
+          <i class="step__sq" aria-hidden="true"></i>
+          <ul class="slashes">
+            <li>Подбор референсов и создание мудборда</li>
+            <li>Разработка визуального стиля (палитра, шрифты, атмосфера)</li>
+            <li>Дизайн концепция первых 2-3 блоков главной страницы в 2-3 вариантах на выбор</li>
+            <li>Дизайн-макет всех экранов в Figma в утвержденном стиле</li>
+          </ul>
+        </li>
+        <li class="step step--brown">
+          <h3 class="h-lg">Верстка и настройка</h3>
+          <i class="step__sq" aria-hidden="true"></i>
+          <ul class="slashes">
+            <li>Верстка всех экранов в Tilda</li>
+            <li>Настройка анимаций и добавление модификаций (по желанию)</li>
+            <li>Базовая SEO-настройка</li>
+            <li>Тестирование на всех популярных устройствах</li>
+          </ul>
+        </li>
+        <li class="step step--blue">
+          <h3 class="h-lg">Запуск и передача</h3>
+          <i class="step__sq" aria-hidden="true"></i>
+          <ul class="slashes">
+            <li>Публикация сайта</li><li>Проверка работы сайта заказчиком</li><li>Финальные правки</li>
+            <li>Акт приема-передачи</li><li>Получение второй части оплаты</li><li>Передача доступа к сайту</li>
+          </ul>
+          <span class="step__mark"><span class="script">финиш</span></span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ========== УСЛУГИ ========== -->
+<section class="services" id="services" data-section="Услуги" data-num="04">
+  <div class="wrap">
+    <span class="label">Услуги и стоимость</span>
+    <div class="price">
+      <div class="price__head">
+        <h2 class="h-xl price__title">Когда? <span>Сколько?</span> Как?</h2>
+        <a class="btn btn--blue" href="#contacts">Обсудить проект</a>
+      </div>
+      <div class="price__cols" aria-hidden="true">
+        <span>/услуга</span><span>/описание <em class="script">наведи, чтобы прочитать</em></span><span>/дедлайны</span><span>/стоимость</span>
+      </div>
+      <ul class="price__list">
+        <li class="row">
+          <button class="row__btn" type="button" aria-expanded="false">
+            <span class="row__name h-lg"><i></i>Лендинг<sup>*</sup></span>
+            <span class="row__desc">лендинг — это...</span>
+            <span class="row__time">7-14 дней</span>
+            <span class="row__cost">50&nbsp;000₽</span>
+          </button>
+          <div class="row__more"><div>
+            <p>Одностраничный сайт для продажи одного товара или услуги. Вся страница ведёт посетителя к одной цели: оставить заявку, купить, подписаться.</p>
+            <p class="row__incl">В создание лендинга входит: <b>/разработка прототипа /дизайн-концепция /дизайн всей страницы /верстка на платформе Tilda с адаптивами /создание технических страниц (404, политика/оферта и т.д.) /подключение домена и CRM</b></p>
+          </div></div>
+        </li>
+        <li class="row">
+          <button class="row__btn" type="button" aria-expanded="false">
+            <span class="row__name h-lg"><i></i>Многостраничный сайт<sup>*</sup></span>
+            <span class="row__desc">многостраничник — это...</span>
+            <span class="row__time">14-21 дней</span>
+            <span class="row__cost">60&nbsp;000₽</span>
+          </button>
+          <div class="row__more"><div>
+            <p>Сайт с разделами и страницами. Даёт свободу навигации, но требует более проработанной архитектуры и контента.</p>
+            <p class="row__incl">В создание многостраничника входит: <b>/разработка прототипа /дизайн-концепция /дизайн всех страниц /верстка на платформе Tilda с адаптивами /создание технических страниц (404, политика/оферта и т.д.) /подключение домена и CRM</b></p>
+          </div></div>
+        </li>
+        <li class="row">
+          <button class="row__btn" type="button" aria-expanded="false">
+            <span class="row__name h-lg"><i></i>Интернет-магазин<sup>*</sup></span>
+            <span class="row__desc">интернет-магазин — это...</span>
+            <span class="row__time">14-21 дней</span>
+            <span class="row__cost">70&nbsp;000₽</span>
+          </button>
+          <div class="row__more"><div>
+            <p>Сайт с каталогом товаров, корзиной и системой оплаты. Требует интеграции с CRM, складским учётом и платёжными системами.</p>
+            <p class="row__incl">В создание интернет-магазина входит: <b>/разработка прототипа /дизайн-концепция /дизайн всех страниц /верстка на платформе Tilda с адаптивами /наполнение сайта товарами /подключение оплаты/доставки/облачной кассы /создание технических страниц (404, спасибо, политика/оферта и т.д.) /подключение домена и CRM</b></p>
+          </div></div>
+        </li>
+        <li class="row">
+          <button class="row__btn" type="button" aria-expanded="false">
+            <span class="row__name h-lg"><i></i>Экспресс-сайт<sup>*</sup></span>
+            <span class="row__desc">экспресс-сайт — это...</span>
+            <span class="row__time">3-7 дней</span>
+            <span class="row__cost">40&nbsp;000₽</span>
+          </button>
+          <div class="row__more"><div>
+            <p>Кому надо быстро здесь и сейчас, собирается на стандартных блоках Tilda.</p>
+            <p class="row__incl">В создание экспресс-сайта входит: <b>/разработка прототипа /дизайн-концепция /верстка на платформе Tilda с адаптивами на стандартных блоках /создание технических страниц (404, спасибо, политика/оферта и т.д.) /подключение домена и CRM</b></p>
+          </div></div>
+        </li>
+        <li class="row">
+          <button class="row__btn" type="button" aria-expanded="false">
+            <span class="row__name h-lg"><i></i>Дизайн в Figma<sup>*</sup></span>
+            <span class="row__desc">дизайн-макет в Figma — это...</span>
+            <span class="row__time">7-14 дней</span>
+            <span class="row__cost">35&nbsp;000₽</span>
+          </button>
+          <div class="row__more"><div>
+            <p>Подробный макет сайта, подготовленный к верстке с адаптивами под разные разрешения.</p>
+            <p class="row__incl">В создание дизайна сайта входит: <b>/разработка прототипа /дизайн-концепция /дизайн всех страниц десктоп версия /отрисовка всех адаптивов /подготовка к верстке</b></p>
+          </div></div>
+        </li>
+        <li class="row">
+          <button class="row__btn" type="button" aria-expanded="false">
+            <span class="row__name h-lg"><i></i>Презентация<sup>*</sup></span>
+            <span class="row__desc">презентация — это...</span>
+            <span class="row__time">3-7 дней</span>
+            <span class="row__cost">500₽/слайд</span>
+          </button>
+          <div class="row__more"><div>
+            <p>Презентация — это способ рассказать сложное просто. Структура, визуал, акценты — всё, чтобы вас услышали.</p>
+            <p class="row__incl">В создание презентации входит: <b>/анализ продукта или услуги; /анализ целевой аудитории; /анализ конкурентов; /разработка уникального дизайна; /верстка в Figma; /работа с фото; /итоговый результат в pdf - формате и ссылка на исходные материалы в Figma (при необходимости)</b></p>
+          </div></div>
+        </li>
+        <li class="row">
+          <button class="row__btn" type="button" aria-expanded="false">
+            <span class="row__name h-lg"><i></i>Дизайн-поддержка<sup>*</sup></span>
+            <span class="row__desc">дизайн-поддержка — это...</span>
+            <span class="row__time">часовая</span>
+            <span class="row__cost">2000₽/час</span>
+          </button>
+          <div class="row__more"><div>
+            <p>Дизайн-поддержка — это гибкое решение без найма в штат. Оплачиваете только нужные часы, получаете стабильное качество и спокойствие за визуал.</p>
+            <p class="row__incl">В дизайн-поддержку входит: <b>/любая услуга по поддержанию работы сайта в плане визуала</b></p>
+          </div></div>
+        </li>
+      </ul>
+    </div>
+    <p class="services__note">Итоговая стоимость обсуждается индивидуально после брифа — зависит от объёма и сложности проекта.</p>
+  </div>
+</section>
+
+<!-- ========== ПРИНЦИПЫ ========== -->
+<section class="principles" aria-labelledby="princ-title">
+  <h2 class="h-giant principles__title" id="princ-title">Мои<br>принципы<br>в дизайне</h2>
+  <div class="principles__track" tabindex="0" aria-label="Принципы работы, прокручивается горизонтально">
+    <article class="note">
+      <div class="note__body">
+        <p>Работаю <b class="circle">официально</b> как самозанятая. Фиксирую все договоренности в техническом задании (ТЗ). Даже когда сайт готов, я <b>остаюсь на связи</b>, чтобы помочь с правками или консультацией.</p>
+      </div>
+      <h3 class="h-md">/Надежность</h3>
+    </article>
+    <article class="note">
+      <div class="note__body">
+        <p>Чувство вкуса в композиции, типографике и цвете. Я изучаю не только российские, но и западные <b>тренды</b> в дизайне ежедневно. Ваш сайт не будет выглядеть устаревшим уже через полгода.</p>
+      </div>
+      <h3 class="h-md">/Насмотренность</h3>
+    </article>
+    <article class="note">
+      <div class="note__body">
+        <p>/Проектирую <b class="circle">логику сайта.</b> Продумываю пути пользователя, чтобы посетитель вашего сайта в 2 клика доходил до <b>целевого действия</b> (заявка, покупка, звонок).</p>
+        <p>/Сайт будет не просто красивым, но и понятным для ваших клиентов.</p>
+      </div>
+      <h3 class="h-md">/Структурность</h3>
+    </article>
+    <article class="note">
+      <div class="note__body">
+        <p><b>Пиксель-перфекционизм</b> в деталях, от сеток до шрифтов. Я уделяю особое внимание мелочам: отступы, типографика, состояния кнопок при наведении. Чётко <b>соблюдаю дедлайны</b> и этапы: сама планирую задачи и делюсь прозрачными отчётами о прогрессе.</p>
+      </div>
+      <h3 class="h-md">/Ответственность</h3>
+    </article>
+    <article class="note">
+      <div class="note__body">
+        <p>Я подбираю <b>удобное</b> для вас <b>время</b> созвонов, даю паузы на размышления и никогда не продавливаю решения. Не гружу профессиональным сленгом, объясняю <b>сложные вещи просто.</b> Мне важно, чтобы процесс сотрудничества оставил <b>приятное впечатление,</b> а не только результат.</p>
+      </div>
+      <h3 class="h-md">/Комфортность</h3>
+    </article>
+  </div>
+</section>
+
+<!-- ========== ВОПРОСЫ ========== -->
+<section class="faq" id="faq" data-section="Вопросы" data-num="05">
+  <div class="wrap">
+    <span class="label">Вопросы</span>
+    <div class="faq__paper">
+      <h2 class="h-xl faq__title">Вопросы, которые обычно стесняются задать <span class="script">(но я отвечу)</span></h2>
+      <ul class="faq__grid">
+        <li class="card card--blue">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">Бюджет ограничен, а хочется круто. Уложимся?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Если «круто» = уникальный дизайн с анимацией — нужен бюджет. Если «круто» = современно, удобно и с душой — уложимся. Я умею делать стильно даже на скромном бюджете: умные готовые решения + кастомизация. Главное — говорите цифру сразу. Подберем вариант.</span><span class="card__tag">Все будет пучком!</span></span>
+          </button>
+        </li>
+        <li class="card card--brown">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">Что не входит в стоимость?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Оплачивается заказчиком отдельно, если требуется:<br>/личный аккаунт на Tilda с оплаченным тарифом;<br>/домен (личный красивый адрес сайта);<br>/дополнительные подписки на любые сторонние сервисы, помогающие работе сайта;<br>/покупка платных шрифтов, фото и иллюстраций.</span><span class="card__tag">Лишнего не предложу</span></span>
+          </button>
+        </li>
+        <li class="card card--brown">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">Сайт нужен «еще вчера». Вы сильно заняты? Можете за выходные сделать?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Если реально «ещё вчера» — я могу сделать сайт, если у тебя есть все тексты и фото. Тогда я просто соберу красиво и быстро.<br>А если сайт с нуля — лучше добавить пару дней, чтобы получилось не «лишь бы как», а «вау, как круто».<br>Напиши, что у тебя уже готово — и я скажу, успеем или нет.</span><span class="card__tag">Вчера не могу. Завтра давай</span></span>
+          </button>
+        </li>
+        <li class="card card--blue">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">А если я сейчас хочу так, а завтра передумаю? Вы меня убьете?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Не переживай. Такого не случится. Почему? Потому что мы каждый этап согласовываем. Ты всегда в курсе и можешь сказать «стоп, давай иначе». И мы разворачиваемся, пока не поздно. К финалу приходим уже вдвоём. Без сюрпризов. Только красивый сайт, который нравится нам обоим.</span><span class="card__tag">Без твоего ок — не шагну</span></span>
+          </button>
+        </li>
+        <li class="card card--brown">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">Что делать, если у меня нет фото и текстов для сайта?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Фото подберу на стоках или сгенерирую силами искусственного интеллекта. Тексты напишем вместе — просто расскажи, что хотите сказать. Главное — стартануть, а контент доделаем в процессе</span><span class="card__tag">Сделаем с нуля даже из ничего</span></span>
+          </button>
+        </li>
+        <li class="card card--brown">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">Я занятой человек. Мне вообще некогда вникать. Можно вы все сами, а я только деньги переведу?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Мы партнёры, а значит — честно! Моя задача — взять на себя 90% работы. Но 10% твоего участия нужны, чтобы сайт получился твой, а не просто красивый. Пара вопросов в начале, пара вариантов на выбор — и ты только говоришь «ок».<br>Ты — про видение. Я — про реализацию. Идёт?</span><span class="card__tag">Сайт = 90% я +10% ты</span></span>
+          </button>
+        </li>
+        <li class="card card--blue">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">Вы сделаете и исчезнете? А кто будет чинить сайт ночью, если он сломается?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">После сдачи сайта мы не прощаемся. Я остаюсь рядом — на случай вопросов, правок или «а давай ещё вот тут подвинем».<br>Если сайт вдруг сломается ночью — чинить буду утром.<br>Но если тебе правда нужна постоянная поддержка — есть услуга обслуживания.<br>Ты не один. И сайт не брошен. Договорились?</span><span class="card__tag">Сломалось ночью? Починим утром</span></span>
+          </button>
+        </li>
+        <li class="card card--brown">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">Смогу ли я потом сам поменять что-то, или я буду вечно от вас зависеть?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Я покажу как поменять базовые моменты в сайте, там интуитивно все понятно, но если захочешь что-то сложное: новую секцию, анимацию, формы под ключ — или просто чтобы я следила за сайтом регулярно — есть услуга обслуживания. Беру на себя всё, что тебе неудобно делать самому.</span><span class="card__tag">Сам? Легко. Со мной? Легче</span></span>
+          </button>
+        </li>
+        <li class="card card--blue">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">А если я сам не знаю, чего хочу?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Моя работа — не просто рисовать, а помогать сформулировать. Я задаю вопросы, показываю примеры, предлагаю варианты. Мы идём от «нравится/не нравится». В итоге ты узнаёшь себя в проекте — потому, что мы собирали его вместе, по кусочкам. Все это не страшно, главное — начать.</span><span class="card__tag">Не знаешь? Я помогу.</span></span>
+          </button>
+        </li>
+        <li class="card card--brown">
+          <button class="card__btn" type="button" aria-expanded="false">
+            <span class="card__tape" aria-hidden="true"></span>
+            <span class="card__face card__front"><span class="card__q">Вот Вы нарисуете круто, но поймут ли это мои клиенты?</span><span class="script card__hint">[наведи, чтобы увидеть ответ]</span></span>
+            <span class="card__face card__back"><span class="card__a">Поймут. Потому что сайт — про них. Я в первую очередь думаю: зайдёт человек — что он видит? куда нажмёт? поймёт ли сразу, чем ты полезен?<br>Сайт получается продуманным и понятным — даже тем, кто в интернете раз в месяц. А красота идёт следом, как приятный бонус.</span><span class="card__tag">Понятно с первого экрана</span></span>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <figure class="view">
+      <video src="videos/view.mp4" muted loop playsinline preload="none" data-autoplay></video>
+      <figcaption class="script">Здесь я создаю дизайн. А это вид, который вдохновляет меня каждый вечер</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Бегущая строка -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Пиксели в порядке</span><span>Кнопки жмутся</span><span>Сетка не едет</span><span>Файл сохранен</span><span>Кофе допит - сайт готов</span>
+    <span>Пиксели в порядке</span><span>Кнопки жмутся</span><span>Сетка не едет</span><span>Файл сохранен</span><span>Кофе допит - сайт готов</span>
+    <span>Пиксели в порядке</span><span>Кнопки жмутся</span><span>Сетка не едет</span><span>Файл сохранен</span><span>Кофе допит - сайт готов</span>
+    <span>Пиксели в порядке</span><span>Кнопки жмутся</span><span>Сетка не едет</span><span>Файл сохранен</span><span>Кофе допит - сайт готов</span>
+  </div>
+</div>
+
+<!-- ========== ОБО МНЕ ========== -->
+<section class="about" id="about" data-section="Обо мне" data-num="06">
+  <div class="wrap about__grid">
+    <div class="about__main">
+      <span class="label">Обо мне</span>
+      <h2 class="h-xl about__title">Раньше считала этажи, теперь&nbsp;— экраны. Проектировщица, ушедшая в веб&#8209;дизайн <span class="script">(всё то же, просто другие инструменты)</span></h2>
+      <p class="about__lead">Привет! Я Полина, веб-дизайнер из Санкт-Петербурга. Ранее занималась планировками зданий, теперь проектирую сайты — всё про людей и удобство. Создаю лендинги, корпоративные сайты, интернет-магазины и интерфейсы с акцентом на задаче. Люблю, когда дизайн аккуратно ведёт пользователя к нужному действию и помогает бизнесу расти.</p>
+
+      <ol class="timeline">
+        <li class="tl tl--blue">
+          <span class="tl__year">2015</span>
+          <div><h3 class="h-lg">Высшее образование</h3>
+          <ul class="slashes slashes--mono"><li>Санкт-Петербургский государственный архитектурно-строительный университет [СПбГАСУ]</li><li>Факультет: Строительный</li><li>Специальность: Строительство уникальных зданий и сооружений [СУЗС]/большепролетные здания</li><li>Период: 2015–2021 [специалитет]</li></ul></div>
+        </li>
+        <li class="tl tl--light">
+          <span class="tl__year">2021</span>
+          <div><h3 class="h-lg">Инженер-конструктор</h3>
+          <ul class="slashes slashes--mono"><li>Закончила университет и сразу же нашла работу по специальности, а именно инженер-конструктор ЖБК [железобетонных конструкций]</li><li>Проектная организация: ООО “ИСП” Платформа</li><li>Должность: инженер-конструктор</li><li>Период: 2021–2024</li></ul></div>
+        </li>
+        <li class="tl tl--blue">
+          <span class="tl__year">2024</span>
+          <div><h3 class="h-lg">UX/UI-дизайн у Алексея Бычкова</h3>
+          <ul class="slashes slashes--mono"><li>Всю жизнь хотелось креатива и творчества, поэтому решаюсь уволиться и прохожу обучение у Алексея Бычкова. Это было моим лучшим решением в выборе преподавателя.</li><li>Деятельность: UX/UI-дизайн</li><li>Период: 2024</li></ul></div>
+        </li>
+        <li class="tl tl--light">
+          <span class="tl__year">2025</span>
+          <div><h3 class="h-lg">Путь в дизайне</h3>
+          <ul class="slashes slashes--mono"><li>Собрала на обучении несколько работы на основе реальных заказов для знакомых и друзей, что позволило научиться работать с заказчиком.</li><li>Деятельность: UX/UI-дизайн</li><li>Период: 2025–сейчас</li></ul></div>
+        </li>
+      </ol>
+    </div>
+
+    <aside class="moments" aria-label="Моменты из жизни">
+      <div class="moments__sticker">
+        <img class="moments__clip" src="images/clip.webp" alt="" width="95" height="80">
+        <span class="moments__paper"></span>
+        <span class="moments__text script">Моменты<br>из жизни</span>
+        <img class="moments__star" src="images/star.svg" alt="" width="12" height="12">
+      </div>
+      <div class="moments__strip">
+        <figure><img src="images/moment-1.webp" alt="" loading="lazy"></figure>
+        <figure><video src="videos/moment-2.mp4" muted loop playsinline preload="none" data-autoplay></video></figure>
+        <figure><img src="images/moment-3.jpg" alt="" loading="lazy"></figure>
+        <figure><video src="videos/moment-4.mp4" muted loop playsinline preload="none" data-autoplay></video></figure>
+        <figure><img src="images/moment-5.jpg" alt="" loading="lazy"></figure>
+        <figure><video src="videos/moment-6.mp4" muted loop playsinline preload="none" data-autoplay></video></figure>
+      </div>
+      <a class="moments__inst script" href="https://instagram.com/ppolinaguseva" target="_blank" rel="noopener"><img src="images/star.svg" alt="" width="12" height="12">inst*: @ppolinaguseva</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ========== ВНЕ ЭКРАНОВ ========== -->
+<section class="life" aria-labelledby="life-title">
+  <div class="wrap">
+    <div class="life__top"><span>Коротко о несрочном</span><span>[За пределами веб-разработки]</span></div>
+    <h2 class="h-xl life__title" id="life-title">Дизайнер интерфейсов вне экранов <span class="script">(мой личный стартер-пак)</span></h2>
+
+    <div class="life__grid">
+      <div class="life__col life__col--l">
+        <div class="item item--pets">
+          <span class="script item__cap">Воспитываю кота</span>
+          <div class="item__imgs"><img src="images/pet-alisey.webp" alt="Кот Алисей" loading="lazy"><img src="images/cat-sleep.webp" alt="" loading="lazy"></div>
+          <h3 class="item__name script">Алисей, 6 лет</h3>
+          <p>[персидский дворянин]<br>Был Алисой, но оказался мальчиком</p>
+        </div>
+        <div class="item">
+          <div class="item__imgs"><img src="images/cat-sansa.webp" alt="Кошка Санса" loading="lazy"></div>
+          <h3 class="item__name script">Санса, 2 года</h3>
+          <p>[бурмилла]<br>Смотрела со мной «Игру престолов», поэтому держит лицо и никогда не показывает эмоций</p>
+        </div>
+        <div class="item">
+          <span class="script item__cap">а теперь и собаку</span>
+          <div class="item__imgs"><img src="images/dog-daisy.webp" alt="Спаниель Дейзи" loading="lazy"><img src="images/dog-hands.webp" alt="" loading="lazy"></div>
+          <h3 class="item__name script">Дейзи, 9 месяцев</h3>
+          <p>[русский охотничий спаниель]<br>Самая молодая, но уже главный архитектор хаоса. Главный мотиватор вставать с утра</p>
+        </div>
+      </div>
+
+      <div class="life__center">
+        <img src="images/girl.webp" alt="Полина в зимней одежде" loading="lazy">
+        <p class="life__badge">[мой отдел по работе с возражениями]</p>
+      </div>
+
+      <div class="life__col life__col--r">
+        <div class="item">
+          <span class="script item__cap">Создаю джунгли в квартире</span>
+          <div class="item__imgs"><img src="images/plant-1.webp" alt="" loading="lazy"><img src="images/plant-2.webp" alt="" loading="lazy"><img src="images/plant-3.webp" alt="" loading="lazy"></div>
+          <h3 class="item__name script">Комнатные растения</h3>
+          <p>[люблю копаться в земле и корешках]</p>
+        </div>
+        <div class="item">
+          <span class="script item__cap">Тягаю железки</span>
+          <div class="item__imgs"><img src="images/dumbbells.webp" alt="" loading="lazy"></div>
+          <h3 class="item__name script">Тренажерный зал, бег</h3>
+          <p>Чтобы руки не дрожали, дизайн был стабильным, а аргументы крепкими</p>
+        </div>
+        <div class="item">
+          <span class="script item__cap">Наматываю километры</span>
+          <div class="item__imgs"><img src="images/sneakers.webp" alt="" loading="lazy"><img src="images/watch.webp" alt="" loading="lazy"><img src="images/bag.webp" alt="" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== КОНТАКТЫ (ФУТЕР) ========== -->
+<footer class="contacts" id="contacts" data-section="Контакты" data-num="07">
+  <div class="wrap">
+    <div class="contacts__card">
+      <div class="contacts__photos">
+        <figure class="polaroid polaroid--big">
+          <img class="polaroid__clip" src="images/clip.webp" alt="" width="104" height="91">
+          <img class="polaroid__photo" src="images/footer-me.webp" alt="Полина" width="246" height="306" loading="lazy">
+          <figcaption class="script script--dark">просто я :)</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--small">
+          <img class="polaroid__photo" src="images/footer-desk.webp" alt="Рабочее место" width="217" height="285" loading="lazy">
+          <figcaption class="script script--dark">мое рабочее место</figcaption>
+        </figure>
+      </div>
+
+      <div class="contacts__links">
+        <span class="script contacts__reply">Отвечу быстрее всего :)</span>
+        <ul>
+          <li><a href="mailto:polinaguseva13@yandex.ru">почта</a></li>
+          <li><a href="https://instagram.com/ppolinaguseva" target="_blank" rel="noopener">instagram<sup>*</sup></a></li>
+          <li><a href="https://t.me/ppolinaguseva" target="_blank" rel="noopener">telegram</a></li>
+          <li><a href="https://ru.pinterest.com/ppolinaguseva/" target="_blank" rel="noopener">pinterest</a></li>
+        </ul>
+      </div>
+
+      <p class="contacts__cta h-giant">Сделаем крутой проект вместе?</p>
+
+      <div class="contacts__bottom">
+        <span>©2026 Полина Гусева / ИНН 472600004020</span>
+        <a class="script" href="https://t.me/ppolinaguseva" target="_blank" rel="noopener">Разработка сайта</a>
+      </div>
+    </div>
+    <p class="contacts__legal">* Instagram — продукт компании Meta Platforms Inc., деятельность которой признана экстремистской и запрещена на территории Российской Федерации.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
